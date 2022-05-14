@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Registration Form</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+<body>
+  <div class="container">
+    <div class="alert">Registered Successfully</div>
+    <div class="title"><h1>Add patient</h1>
+      <h6>Fill the following details to add patient</h6>
+    </div>
+    
+    <div class="content">
+      <form action="#" method="POST" id="registrationform">
+        <div class="user-details">
+          <div class="input-box">
+            <label class="details">Full Name</label>
+            <input type="text" id="fullname" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <label class="details">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <label  class="details">Phone Number</label >
+            <input type="number" id="phonenumber" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <label pan class="details">Address</label >
+            <input type="text" id="address" placeholder="Enter your Address" required>
+          </div>
+          <div class="input-box">
+            <label  class="details">Date Of Birth</label >
+            <input type="date" id="dateofbirth" placeholder="Enter your Date of Birth" required>
+          </div>
+          <div class="input-box">
+            <label class="details">Medical History</label>
+            <input type="text" id="medicalhistory" placeholder="Enter your Medical History" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <label class="gender-title">Gender</label>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <label class="gender">Male</label>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <label class="gender">Female</label>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <label class="gender">Other</label>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
